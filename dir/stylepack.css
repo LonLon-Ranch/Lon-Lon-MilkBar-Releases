@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /* YAY ITS ROBOTO FONT GUYS!*/
+
+body {
+    background-color: #0d1117;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    font-family: "Roboto Flex", sans-serif; /*Never add text shadow to anything or i will murder you also roboto*/
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.notice {
+    text-align: center;
+    color: red;
+}
+
+.latest {
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+.team {
+    text-align: center;
+}
+
+.team h3 {
+    margin: 20px 0%;
+}
+
+.team .imag {
+    width: 80vw;
+    max-width: 800px;
+    margin: auto;
+}
+
+.imag {
+    display: block;
+    margin-left: calc(50% - 200px); /* Adjust value */
+    margin: 20px 0px;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+    justify-content: center; /* Center them horizontally */
+    padding: 5px;
+    position: relative; /* Ensures it stays in the normal document flow */
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+hr {
+    margin-top: 0; /* Ensures it starts right after .header */
+    border: 1px solid #98d7fc;
+}
+
+div {
+    color: white;
+}
+
+.front {
+    text-align: center;
+    margin: 50px;
+}
+
+.downloads {
+    color: white;
+    text-decoration: none;
+    display: flex; /* Makes the <a> a flex container */
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    height: 175px;
+    width: 450px; /* Slightly wider for better spacing */
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: #177eb0;
+    font-size: 25px; /* Optional: Adjust font size */
+    font-weight: bold; /* Optional: Make text bold */
+	padding: 0 20px;
+    justify-content: flex-start;
+    transition: all 0.2s ease;
+}
+
+.downloads:hover {
+    background-color: #14618d;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.downloads:active {
+    transform: translateY(1px);
+}
+
+.description {
+    text-align: center;
+}
+
+.marginthingy {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download {
+    --w: #177eb0;
+    --ww: #98d7fc;
+    --www: #98d7fc;
+    cursor: pointer;
+    width: 230px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: var(--w);
+    border: 2px solid var(--ww);
+    border-radius: 75rem;
+    box-shadow: 0 5px 0 var(--ww);
+    transition: all 0.1s ease;
+    margin: 10px;
+}
+
+.download:hover {
+    transform: translateY(-4px);
+}
+
+    .download:active {
+        letter-spacing: 0px;
+        transform: translateY(8px);
+        box-shadow: 0 0 0 var(--www);
+    }
+
+/* From Uiverse.io by vinodjangid07 */
+.Btn {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 3px;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.BG {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: #98d7fc;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+    backdrop-filter: blur(4px);
+}
+
+.BtnD {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.svgContainerD {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.BGD {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: #98d7fc;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.BtnD:hover .BGD {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.BtnD:hover .svgContainerD {
+    background-color: rgba(214, 214, 214, 0.466);
+    backdrop-filter: blur(4px);
+}
+
+div.teamlist {
+    text-align: center;
+}
+
+ul.list {
+    display: inline-block;
+    text-align: left;
+}
+
+a {
+    color: white;
+}
+
+.material-symbols-rounded {
+	font-size: 128px; /* Adjust this value to your preferred size */
+	margin-right: 15px; /* Add some spacing between icon and text */
+	font-variation-settings:
+	'FILL' 1,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 48,
+}
+
+.downloads .material-symbols-rounded {
+  font-size: 90px !important;  /* Force icon size */
+  width: 70px !important;     /* Ensure container width */
+  margin-right: 20px;         /* Add spacing between icon and text */
+}
+
+/* New container for columns */
+.releases-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap; /* Allows columns to stack on mobile */
+}
+
+/* Individual column styling */
+.release-column {
+    flex: 1;
+    min-width: 500px; /* Minimum width before wrapping */
+    max-width: 600px; /* Maximum column width */
+}
+
+/* Update marginthingy to fill columns */
+.marginthingy {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Make download buttons responsive */
+.downloads {
+    width: 100%; /* Fill column width */
+    max-width: 450px; /* Maximum button width */
+    height: 150px; /* Reduced height for better proportion */
+    margin: 10px auto; /* Adjust vertical spacing */
+    font-size: 22px; /* Slightly smaller text */
+}
+
+/* Adjust icon sizing */
+.downloads .material-symbols-rounded {
+    font-size: 70px !important;
+    margin-right: 15px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .release-column {
+        min-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .downloads {
+        height: 120px;
+        font-size: 18px;
+    }
+    
+    .downloads .material-symbols-rounded {
+        font-size: 50px !important;
+    }
+}
